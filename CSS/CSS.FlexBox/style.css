@@ -1,0 +1,10 @@
+.container{
+    /*Deixa flex e muda a disposição das divs, deixando em linha e não no normal flow */
+    display: flex;
+    /*Muda a direção, podendo ser row, column ou reverse */
+    flex-direction: row;
+    /* Flex-start, flex-end, cente, space-evenly, space-around, space-between */
+    justify-content: Flex-start;
+    /* Strech, flex-start, flex-end, center, baseline  */
+    align-items: center;
+}
