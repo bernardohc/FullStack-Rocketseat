@@ -1,10 +1,26 @@
 .container{
+    /* height: 50vh; */
     /*Deixa flex e muda a disposição das divs, deixando em linha e não no normal flow */
     display: flex;
     /*Muda a direção, podendo ser row, column ou reverse */
-    flex-direction: row;
+    /* flex-direction: column; */
     /* Flex-start, flex-end, cente, space-evenly, space-around, space-between */
-    justify-content: Flex-start;
+    /* justify-content: Flex-start; */
     /* Strech, flex-start, flex-end, center, baseline  */
-    align-items: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* gap: 2rem; */
+    /* flex-wrap: wrap; */
+}
+
+.item{
+    flex-basis: 120px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    flex: auto;
+}
+
+.item:nth-child(2){
+    /* flex-grow: 3; */
+    flex-shrink: 1;
 }
