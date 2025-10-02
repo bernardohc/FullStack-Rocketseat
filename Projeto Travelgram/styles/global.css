@@ -26,3 +26,14 @@ body {
     color: var(--text-color-secondary);
     background-color: var(--background-color);
 }
+
+a{
+    text-decoration: none;
+    /* Cor é herdada, nesse caso do body */
+    color:inherit
+}
+
+a:hover{
+    color: var(--brand-color);
+    text-decoration: underline;
+}
