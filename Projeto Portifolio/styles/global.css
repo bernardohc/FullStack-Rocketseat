@@ -28,5 +28,27 @@
 
     --font-family-text: 'Maven Pro', sans-serif;
     --text-md: 600 16px/140% var(--font-family-text);
-    --text-sm: 600 14px/140% var(--font-family-text);
+    --text-sm: 400 14px/140% var(--font-family-text);
+}
+
+body{
+    background-color: var(--gray-400);
+} 
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 100%;
+}
+
+h1{
+    font: var(--title-lg);
+    color: var(--gray-100);
+}
+
+.subtitle{
+    font: var(--text-sm);
+    color: var(--gray-200);
 }
