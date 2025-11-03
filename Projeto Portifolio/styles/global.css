@@ -48,7 +48,15 @@ h1{
     color: var(--gray-100);
 }
 
+p{
+    font: var(--text-sm);
+}
+
 .subtitle{
     font: var(--text-sm);
     color: var(--gray-200);
+}
+
+.emphasis{
+    color: var(--color-red);
 }
