@@ -27,7 +27,7 @@
     --subtitle: 600 20px/120% var(--font-family-subtitle);
 
     --font-family-text: 'Maven Pro', sans-serif;
-    --text-md: 600 16px/140% var(--font-family-text);
+    --text-md: 100 16px/140% var(--font-family-text);
     --text-sm: 400 14px/140% var(--font-family-text);
 }
 
@@ -53,10 +53,7 @@ p{
 }
 
 .subtitle{
-    font: var(--text-sm);
+    font: var(--subtitle);
     color: var(--gray-200);
-}
-
-.emphasis{
-    color: var(--color-red);
+    stroke: var(--gray-300);
 }
