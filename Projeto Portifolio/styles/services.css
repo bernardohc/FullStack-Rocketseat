@@ -1,0 +1,14 @@
+#services{
+    background-color: var(--gray-600);
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: var(--color-red);
+        font: var(--subtitle);
+    }
+}
