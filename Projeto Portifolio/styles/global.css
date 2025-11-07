@@ -42,3 +42,16 @@ img{
 .container{
     max-width: 100%;
 }
+
+.hover{
+    text-decoration: none;
+    border: 1px solid transparent;
+    display: inline-block; /* importante para respeitar a borda */
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.hover:hover{
+    /* border: 1px solid var(--color-red);     */
+    border-color: var(--color-red);
+}
