@@ -63,10 +63,6 @@ h1{
     padding-top: 16px;
 }
 
-.destaque{
-    color: var(--color-red);
-}
-
 #tags-container{
     display: flex;
     flex-wrap: wrap;

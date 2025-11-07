@@ -42,18 +42,3 @@ img{
 .container{
     max-width: 100%;
 }
-
-h1{
-    font: var(--title-lg);
-    color: var(--gray-100);
-}
-
-p{
-    font: var(--text-sm);
-}
-
-.subtitle{
-    font: var(--subtitle);
-    color: var(--gray-200);
-    stroke: var(--gray-300);
-}
