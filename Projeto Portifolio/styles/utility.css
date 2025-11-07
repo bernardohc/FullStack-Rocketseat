@@ -9,6 +9,9 @@
 .grid-columns{
     grid-template-columns: repeat(3, 1fr);
 }
+.gap-8{
+    gap: 8px;
+}
 
 .gap-16{
     gap: 16px;
@@ -37,6 +40,11 @@ h3{
     color: var(--gray-200);
 }
 
+.text-md{
+    font: var(--text-md);
+    color: var(--gray-200);
+}
+
 .subtitle{
     font: var(--subtitle);
     color: var(--gray-200);
@@ -51,4 +59,9 @@ h3{
 .subtitle-red{
     font: var(--subtitle);
     color: var(--color-red);
+}
+
+.subtitle-purple{
+    font: var(--subtitle);
+    color: var(--color-purple);
 }
