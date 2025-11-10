@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- atributos gerais value, autocomplete, autofocus, disabled, readonly, form, required, placeholder -->
+    <form action="" id="meuForm">
+        <div>
+            <button autofocus>Submit</button>
+            <!-- autofocus deixa o foco da página ao carrgea sobre o elemento -->
+            <button type="submit">Submit 1</button>
+            <!-- Padrão tipo submit, pode ser reset ou button -->
+            <button type="reset">Reset</button>
+            <!-- faz o reset da página -->
+            <button type="button" disabled>Cancelar</button>
+            <button name="botao" value="valor_do_botao">Botão</button>
+        </div>
+        <div>
+            <!-- atributos funfamentais type e name -->
+            <input type="text" name="nome">
+            <br>
+            <br>
+            <!-- atributos gerais value, autocomplete, autofocus, disabled, readonly, form, required, placeholder -->
+            <input type="text" name="nome" value="Bernardo" form="meuForm" placeholder="Coloque seu nome">
+        </div>
+        <br>
+        <br>
+        <div>
+            <!-- min, max, step como vai ser a contagem -->
+            <input type="number" min="16" max="22" step="2">
+        </div>
+        <br>
+        <br>
+        <div>
+            <input type="email" name="mail" id="mailid" pattern=".+rocketseat\.com\.br" title="formato rocketseat" required>
+            <!-- atributo multiple - multiplos e-mails, pattern - formato -->
+        </div>
+    </form>
+    
+</body>
+</html>
