@@ -7,8 +7,9 @@
 </head>
 <body>
     <!-- atributos gerais value, autocomplete, autofocus, disabled, readonly, form, required, placeholder -->
-    <form action="" id="meuForm">
+    <form action="" id="meuForm" enctype="multipart/form-data"> <!-- atirbuto do input file -->
         <div>
+            <h3>Button</h3>
             <button autofocus>Submit</button>
             <!-- autofocus deixa o foco da página ao carrgea sobre o elemento -->
             <button type="submit">Submit 1</button>
@@ -18,7 +19,10 @@
             <button type="button" disabled>Cancelar</button>
             <button name="botao" value="valor_do_botao">Botão</button>
         </div>
+        <br>
+        <br>
         <div>
+            <h3>Text</h3>
             <!-- atributos funfamentais type e name -->
             <input type="text" name="nome">
             <br>
@@ -29,14 +33,108 @@
         <br>
         <br>
         <div>
+            <h3>Number</h3>
             <!-- min, max, step como vai ser a contagem -->
             <input type="number" min="16" max="22" step="2">
         </div>
         <br>
         <br>
         <div>
-            <input type="email" name="mail" id="mailid" pattern=".+rocketseat\.com\.br" title="formato rocketseat" required>
+            <h3>E-mail</h3>
+            <input type="email" name="mail" id="mailid" pattern=".+rocketseat\.com\.br" title="formato rocketseat" >
             <!-- atributo multiple - multiplos e-mails, pattern - formato -->
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Password</h3>
+            <input type="password" minlength="4" maxlength="10" name="senha" pattern="[0-9a-fA-F]{4,10}" title="Senha">
+            <!-- atributos especificos - minlength/maxlength, inputmode (funciona em dispositivos moveis) numeric abre teclado numerico, pattern - expressão regular validar o que foi digitado -->
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>File</h3>
+            <input type="file" name="fotoPerfil" multiple accept="video/*">
+            <!-- atributos especificos - enctype="multipart/form-data" (inserir na tag forms), accept = tipos de arquivos .doc/image/*....-->
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Range</h3>
+            <input type="range" name="total">
+            <!-- atributos especificos - min/max step -->
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>color</h3>
+            <datalist id="colorpicker">
+                <option value="#FAC00">01</option>
+                <option value="#ACFCD0">02</option>
+            </datalist>
+            <input type="color" value="#0FACAA" name="color" list="colorpicker">
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Checkbox</h3>
+            <input type="checkbox" name="carro" value="vw">
+            <input type="checkbox" name="carro" value="audi">
+            <input type="checkbox" name="carro" value="chefrolet">
+            <!-- atributos - value, checked -->
+            <br>
+            <br>
+            <h3>Radio</h3>
+            <input type="radio" name="carro1" value="vw">
+            <input type="radio" name="carro1" value="audi">
+            <input type="radio" name="carro1" value="chefrolet">
+            <!-- atributos - value, checked -->
+            <h3>Hidden</h3>
+            <input type="hidden" name="id" value="fdsaasdf">
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Label</h3>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Coloque seu nome" id="nome">
+            <br>
+            <br>
+            <label>
+                Cidade
+                <input type="text" name="cidade" id="cidade" placeholder="insira sua cidade">
+            </label>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>TextArea</h3>
+            <textarea name="" id="texto" name="texto"></textarea>
+            <!-- atributos maxlength/minlength wrap (quebra de linha)  -->
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Select</h3>
+            <select name="car">
+                <option value="">Selecione</option>
+                <option value="vw">nome</option>
+                <option value="audi">audi</option>
+                <option value="ford">ford</option>
+            </select>
+            <!-- atributos mutilple, size, optgroup -->
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Fieldset</h3>
+            <!-- é um agrupamento de campos com o memso proposito -->
+            <fieldset>
+                <legend>Contato</legend>
+                <input type="text" name="Nome">
+                <input type="email" name="E-mail">
+            </fieldset>
         </div>
     </form>
     
